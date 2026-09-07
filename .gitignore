@@ -1,0 +1,12 @@
+.worktrees/
+
+node_modules/
+client/dist/
+data/*.sqlite
+data/*.sqlite-shm
+data/*.sqlite-wal
+data/backups/
+data/logs/
+data/uploads/
+.env
+

@@ -1,0 +1,27 @@
+{
+  "name": "customer-erp-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "vitest run",
+    "seed:demo": "node src/seed-demo.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "busboy": "^1.6.0",
+    "content-disposition": "^1.0.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "file-type": "^22.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.4",
+    "vitest": "^3.2.4"
+  }
+}

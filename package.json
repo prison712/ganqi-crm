@@ -1,0 +1,16 @@
+{
+  "name": "customer-erp",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["client", "server"],
+  "scripts": {
+    "dev": "concurrently \"npm --workspace server run dev\" \"npm --workspace client run dev\"",
+    "test": "npm --workspace server test && npm --workspace client test",
+    "build": "npm --workspace client run build",
+    "start": "npm --workspace server start",
+    "seed:demo": "npm --workspace server run seed:demo"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
